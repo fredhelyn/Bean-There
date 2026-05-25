@@ -54,16 +54,19 @@ body{
   display:flex;
   list-style:none;
   gap:20px;
-  padding-right: 890px;
+  padding-right: 30px;
 }
 .navmenu li a{
   color:white;
   text-decoration:none;
   padding:12px 18px;
   transition:.3s;
-  font-family: 'Qlassy', sans-serif; /*font sa nav bar*/
+  font-family: 'Qlassy', sans-serif;
   font-size:20px;                                           
-                                                
+}
+.navmenu li a.active{
+  background-color: #b48a67;
+  border-radius: 20px;
 }
 .navmenu li a:hover{
   background:#342519;
@@ -161,6 +164,110 @@ h1{
 
 
 
+
+/* kopi SECTION */
+.kopi{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 10% 50px;
+    gap: 40px;
+}
+
+.kopi-text{
+    flex: 1;
+    margin-top: -160px;
+}
+
+.kopi-text h1{
+    font-size: 70px;
+    color: #684f36;
+    font-family: 'Qlassy', sans-serif;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+.kopi-text p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5C3A21;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+.kopi-btn{
+    display: inline-block;
+    padding: 14px 28px;
+    background: #684f36;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .3s;
+    font-family: 'Qlassy', sans-serif;
+}
+
+.kopi-btn:hover{
+    background: #342519;
+}
+
+.kopi-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.kopi-image img{
+    width: 100%;
+    max-width: 400px;
+    animation: float 3s ease-in-out infinite;
+    margin-bottom:10px;
+}
+
+/* FLOAT EFFECT */
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+    .kopi{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .kopi-text h1{
+        font-size: 45px;
+    }
+
+    .kopi-text p{
+        font-size: 16px;
+    }
+
+    .kopi-image img{
+        max-width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
 /* alldevices */
 
 @media (max-width:768px){
@@ -192,3 +299,7 @@ h1{
                                                 
 }
 }
+
+
+
+

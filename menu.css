@@ -173,7 +173,6 @@ body{
     transform: scale(1.2);
 }
 
-
 /* --- MENU GRID --- */
 .menu-grid {
     width: 100%;
@@ -191,26 +190,37 @@ body{
     border-radius: 6px;
     background-color: #f3e8d6;
     transition: .3s;
+    overflow: hidden; /* para hindi lumabas image */
 }
+
 .item-box:hover{
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .center-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
+
 .center-image img {
-    width: 70px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* para sakto buong image */
 }
+
 .center-image span {
-    font-size: 22px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+     font-size: 22px;
     font-weight: bold;
     color: #5C3A21;
     font-family: 'Qlassy', sans-serif;
+   
 }
 
 
